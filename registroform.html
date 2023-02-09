@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+
+  <h1>SignUp</h1>
+    <span>or <a href="ingresoform.php">Login</a></span>
+
+    <form action="registro.php" method="POST">
+      <input name="usuario" type="text" placeholder="Introduce tu usuario" required>
+      <input name="codigo" type="number" placeholder="Introduce tu codigo" required>
+      <input name="nombre" type="text" placeholder="Introduce tu nombre" required>
+      <input name="contraseña" type="password" placeholder="ingresa tu contraseña" required>
+      <input name="confirm_Contraseña" type="password" placeholder="Confirma tu contraseña">
+      <select name="tipoUsuario" required>
+        <option value="admin">Administrador</option>
+        <option value="alum">Alumno</option>
+      </select>
+      
+      <input type="submit" value="Registrarse">
+    </form>
+
+</body>
+</html>
+
